@@ -1,0 +1,33 @@
+{
+  "name": "alexmasterov/polling-consumer-kata",
+  "description": "A pure Polling Consumer written in PHP",
+  "type": "project",
+  "license": "MIT",
+  "homepage": "https://github.com/AlexMasterov/polling-consumer-kata",
+  "authors": [{
+    "name": "Alex Masterov",
+    "email": "alex.masterow@gmail.com"
+  }],
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "autoload": {
+    "psr-4": {
+      "PollingConsumer\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PollingConsumer\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "7.1 - 7.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.2"
+  }
+}
